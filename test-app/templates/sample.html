@@ -1,0 +1,22 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <h2>Flask 掛け算アプリ</h2>
+        <hr>
+            <div>
+                <form action="/" method="POST">
+                    <label for="arg1">引数1:</label>
+                    <input type="text" value="" name="arg1" id="arg1_id"/>
+                    <br>
+                    <label for="arg2">引数2:</label>
+                    <input type="text" value="" name="arg2" id="arg2_id"/>
+                    <br>
+                    <p>合計: {{ sum }}</p>
+                    <br>
+                    <input type="submit" value="送信" id="/">
+                </form>
+            </div>
+        <hr>
+    </body>
+</html>
