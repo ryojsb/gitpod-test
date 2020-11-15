@@ -1,0 +1,10 @@
+image: nginx:1.19.2
+
+# 起動時に実行するコマンド
+tasks:
+    - init: yarn install
+      command: yarn start
+# 起動時に開くポート
+ports:
+    - port: 8000
+      onOpen: open-preview
